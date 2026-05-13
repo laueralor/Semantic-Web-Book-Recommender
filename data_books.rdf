@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ex="http://example.org/booksystem#">
+
+  <rdf:Description rdf:about="http://example.org/user/Alice">
+    <ex:name>Alice</ex:name>
+    <ex:readingLevel>Intermediate</ex:readingLevel>
+    <ex:preferredTheme>Science Fiction</ex:preferredTheme>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/user/Bob">
+    <ex:name>Bob</ex:name>
+    <ex:readingLevel>Beginner</ex:readingLevel>
+    <ex:preferredTheme>Mystery</ex:preferredTheme>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/book/Dune">
+    <ex:title>Dune</ex:title>
+    <ex:genre>Science Fiction</ex:genre>
+    <ex:genre>Fantasy</ex:genre>
+    <ex:requiredLevel>Advanced</ex:requiredLevel>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/book/TheSilentPatient">
+    <ex:title>The Silent Patient</ex:title>
+    <ex:genre>Mystery</ex:genre>
+    <ex:genre>Murder</ex:genre>
+    <ex:requiredLevel>Intermediate</ex:requiredLevel>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://example.org/book/HungerGames">
+    <ex:title>Hunger Games</ex:title>
+    <ex:genre>Science Fiction</ex:genre>
+    <ex:genre>Fantasy</ex:genre>
+    <ex:requiredLevel>Beginner</ex:requiredLevel>
+  </rdf:Description>
+
+</rdf:RDF>
