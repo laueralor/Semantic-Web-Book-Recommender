@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9/"
-     xml:base="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9/"
+<rdf:RDF xmlns="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -165,6 +165,7 @@
     <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#RecommendedBook"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#hasGenre"/>
@@ -310,7 +311,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#AlexMichaelides">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author"/>
-        <untitled-ontology-9:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#TheSilentPatient"/>
+        <isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#TheSilentPatient"/>
     </owl:NamedIndividual>
     
 
@@ -319,9 +320,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Alice">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#User"/>
-        <untitled-ontology-9:hasReadingLevel rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#intermediateLevel"/>
-        <untitled-ontology-9:prefersTheme rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#scienceFictionTheme"/>
-        <untitled-ontology-9:hasName>Alice</untitled-ontology-9:hasName>
+        <hasReadingLevel rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#intermediateLevel"/>
+        <prefersTheme rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#scienceFictionTheme"/>
+        <hasName>Alice</hasName>
     </owl:NamedIndividual>
     
 
@@ -330,9 +331,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Bob">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#User"/>
-        <untitled-ontology-9:hasReadingLevel rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#beginnerLevel"/>
-        <untitled-ontology-9:prefersTheme rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#mysteryTheme"/>
-        <untitled-ontology-9:hasName>Bob</untitled-ontology-9:hasName>
+        <hasReadingLevel rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#beginnerLevel"/>
+        <prefersTheme rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#mysteryTheme"/>
+        <hasName>Bob</hasName>
     </owl:NamedIndividual>
     
 
@@ -341,11 +342,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Dune">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book"/>
-        <untitled-ontology-9:hasAuthor rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#FrankHerbert"/>
-        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#fantasyTheme"/>
-        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#scienceFictionTheme"/>
-        <untitled-ontology-9:hasRequiredLevel rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#advancedLevel"/>
-        <untitled-ontology-9:hasTitle>Dune</untitled-ontology-9:hasTitle>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#RecommendedBook"/>
+        <hasAuthor rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#FrankHerbert"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#fantasyTheme"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#scienceFictionTheme"/>
+        <hasRequiredLevel rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#advancedLevel"/>
+        <hasTitle>Dune</hasTitle>
     </owl:NamedIndividual>
     
 
@@ -354,7 +356,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#FrankHerbert">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author"/>
-        <untitled-ontology-9:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Dune"/>
+        <isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Dune"/>
     </owl:NamedIndividual>
     
 
@@ -363,9 +365,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#HungerGames">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book"/>
-        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#fantasyTheme"/>
-        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#scienceFictionTheme"/>
-        <untitled-ontology-9:hasTitle>Hunger Games</untitled-ontology-9:hasTitle>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#RecommendedBook"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#fantasyTheme"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#scienceFictionTheme"/>
+        <hasTitle>Hunger Games</hasTitle>
     </owl:NamedIndividual>
     
 
@@ -374,7 +377,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#SuzanneCollins">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author"/>
-        <untitled-ontology-9:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#HungerGames"/>
+        <isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#HungerGames"/>
     </owl:NamedIndividual>
     
 
@@ -383,10 +386,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#TheSilentPatient">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book"/>
-        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#murderTheme"/>
-        <untitled-ontology-9:hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#mysteryTheme"/>
-        <untitled-ontology-9:hasRequiredLevel rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#intermediateLevel"/>
-        <untitled-ontology-9:hasTitle>The Silent Patient</untitled-ontology-9:hasTitle>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#RecommendedBook"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#murderTheme"/>
+        <hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#mysteryTheme"/>
+        <hasRequiredLevel rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#intermediateLevel"/>
+        <hasTitle>The Silent Patient</hasTitle>
     </owl:NamedIndividual>
     
 
@@ -395,6 +399,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#advancedLevel">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Advanced"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
     </owl:NamedIndividual>
     
 
@@ -403,6 +408,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#beginnerLevel">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Beginner"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
     </owl:NamedIndividual>
     
 
@@ -411,6 +417,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#fantasyTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Fantasy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
     </owl:NamedIndividual>
     
 
@@ -419,6 +426,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#intermediateLevel">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Intermediate"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
     </owl:NamedIndividual>
     
 
@@ -427,6 +435,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#murderTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Murder"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
     </owl:NamedIndividual>
     
 
@@ -435,6 +444,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#mysteryTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Mystery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
     </owl:NamedIndividual>
     
 
@@ -443,6 +453,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#scienceFictionTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ScienceFiction"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
     </owl:NamedIndividual>
     
 

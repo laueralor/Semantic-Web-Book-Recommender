@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#hasAuthor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isAuthorOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#hasGenre">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isGenreOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isAuthorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isAuthorOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isGenreOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isGenreOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isPreferredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isPreferredBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#prefersTheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#prefersTheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#prefersTheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Advanced -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Advanced">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Beginner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Beginner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#RecommendedBook"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Fantasy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Fantasy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Intermediate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Intermediate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Murder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Murder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Mystery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Mystery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#RecommendedBook -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#RecommendedBook"/>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ScienceFiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ScienceFiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#User"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#AlexMichaelides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#AlexMichaelides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Bob -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Bob">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#User"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Dune -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Dune">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#RecommendedBook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#FrankHerbert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#FrankHerbert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#HungerGames -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#HungerGames">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#RecommendedBook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#SuzanneCollins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#SuzanneCollins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#TheSilentPatient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#TheSilentPatient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#RecommendedBook"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#advancedLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#advancedLevel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Advanced"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#beginnerLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#beginnerLevel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Beginner"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#fantasyTheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#fantasyTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Fantasy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#intermediateLevel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#intermediateLevel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Intermediate"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#murderTheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#murderTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Murder"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#mysteryTheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#mysteryTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Mystery"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#scienceFictionTheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#scienceFictionTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ScienceFiction"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Theme"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
