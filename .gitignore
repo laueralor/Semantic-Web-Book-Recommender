@@ -22,3 +22,16 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# entorno virtual local de Python
+ai-engine-python/env/
+
+# base de datos vectorial persistida localmente
+ai-engine-python/chroma_db/
+
+# srchivos de caché de ejecución de Python
+__pycache__/
+*.pyc
+
+# srchivos de configuración de variables ocultas
+.env
