@@ -7,8 +7,8 @@
 
 ### Controbutions Description:
 - **Laura Eraso Lorenzo:** Repository creation, initial RDF/XML modeling and OWL Ontology.
-- **Javier Muela Rubio:** Backend development (Jena API) and web interface.
-- **Ignacio Reyes de Toro:** Implementation of the RAG Chatbot and Vector Database.
+- **Ignacio Reyes de Toro:** Backend development (Jena API) and web interface.
+- **Javier Muela Rubio:** Implementation of the RAG Chatbot and Vector Database.
 
 ### Link of the repository:
 (https://github.com/laueralor/Semantic-Web-Book-Recommender.git)
