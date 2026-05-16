@@ -55,6 +55,7 @@
     <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#hasRequiredLevel -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#hasRequiredLevel">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isLevelOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Book"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#ReadingLevel"/>
@@ -71,6 +72,12 @@
     <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isGenreOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isGenreOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isLevelOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#isLevelOf"/>
     
 
 
@@ -311,6 +318,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#AlexMichaelides">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author"/>
         <untitled-ontology-9:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#TheSilentPatient"/>
+        <untitled-ontology-9:hasName>AlexMichaelides</untitled-ontology-9:hasName>
     </owl:NamedIndividual>
     
 
@@ -355,6 +363,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#FrankHerbert">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author"/>
         <untitled-ontology-9:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Dune"/>
+        <untitled-ontology-9:hasName>Frank Herbert</untitled-ontology-9:hasName>
     </owl:NamedIndividual>
     
 
@@ -375,6 +384,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#SuzanneCollins">
         <rdf:type rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#Author"/>
         <untitled-ontology-9:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#HungerGames"/>
+        <untitled-ontology-9:hasName>Suzanne Collins</untitled-ontology-9:hasName>
     </owl:NamedIndividual>
     
 

@@ -1,0 +1,42 @@
+# Query 1: List books with the genres and the requires level
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX laura: <http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#>
+SELECT ?libro ?genero ?nivel WHERE {
+  ?libro rdf:type laura:Book .
+  ?libro laura:hasGenre ?genero .
+  ?libro laura:hasRequiredLevel ?nivel .
+}
+
+# Query 2: Search books with the a intermediate required level
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX laura: <http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#>
+SELECT ?libro WHERE {
+  ?libro rdf:type laura:Book .
+  ?libro laura:hasRequiredLevel laura:intermediateLevel .
+}
+
+# Query 3: Books of Science Fiction with level Intermediate or Avanced
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX laura: <http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#>
+SELECT ?book ?level WHERE {
+  ?book rdf:type laura:Book .
+  ?book laura:hasGenre laura:scienceFictionTheme .
+  ?book laura:hasRequiredLevel ?level .
+  FILTER (?level = laura:intermediateLevel || ?level = laura:advancedLevel)
+}
+
+# Query 4: Mapping the profiles of the register users with his level and preferences
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX laura: <http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#>
+SELECT ?usuario ?nivel ?tema WHERE {
+  ?usuario rdf:type laura:User .
+  ?usuario laura:hasReadingLevel ?nivel .
+  ?usuario laura:prefersTheme ?tema .
+}
+
+# Query 5: See the classificated books automatically in the class RecommendedBook
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX laura: <http://www.semanticweb.org/laura/ontologies/2026/4/untitled-ontology-9#>
+SELECT ?libroRecomendado WHERE {
+  ?libroRecomendado rdf:type laura:RecommendedBook .
+}
